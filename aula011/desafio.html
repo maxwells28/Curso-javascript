@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio da nacionalidade</title>
+</head>
+<body>
+    <h1>Qual País você nasceu? </h1>
+    Digite a Sua Nascionalidade: <input type="text" name="txtnas" id="txtnas"> 
+    <input type="button" value="Verificar" onclick="analisar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function analisar(){
+            var txtv = document.querySelector('input#txtnas');
+            var res = document.querySelector('div#res');
+            var nas = txtv.value;
+
+            if (nas.toLowerCase() === "brasileiro") {
+                res.innerHTML = `<p>Você é natural do Brasil</p>`;
+            } else {
+                res.innerHTML = `<p>Você é natural do ${nas}, você é estrangeiro</p>`;
+            }
+        }
+    </script>
+</body>
+</html>
