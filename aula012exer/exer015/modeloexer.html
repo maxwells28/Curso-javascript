@@ -6,29 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modelo de Exercicio</title>
 </head>
-<body>
+<body onload="calcular()">
     <header>
         <h1>Verificador de Idade</h1>
  
     </header>
     <section>
-        <div id="img">
-            
-            testando....
+        
+            <div id="res">
+                Digite o Ano de Nascimento <input type="number" id="anonasc" name="anonasc" value="calcular">
+                <input type="button" value="Verificar" id="idade" onclick="Calcular()">
 
-        </div>
-        <div>
-            Digite o Ano de Nascimento <input type="number" id="nasc"><br>
+            </div>
+
+        
+        <!--
+        <div id="sexo">
+            
             sexo : <input type="radio">masculino <input type="radio"> Feminino <br>
 
-            <input type="button" value="verificar">
-        
-
+           
             
             
 
         </div>
+        <div id="res">
+            <input type="button" value="verificar"> 
 
+
+        </div>
+    -->
     </section>
     <footer>
         <p>&copy; produzido por Max</p>

@@ -7,6 +7,7 @@ var hora = 20
 
 //msg.innerHTML = `agora são ${hora} horas`
 
+
 if( hora >= 0 && hora < 12){    
     img.src = "fotomanha.png"
     document.body.style.backgroundColor = '#e2cd9f'
