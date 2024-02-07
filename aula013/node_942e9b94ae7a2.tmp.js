@@ -2,7 +2,7 @@ var c = 1
 do{
     console.log('tudobem')
     c++
-}while(c <= 6)
+}while(1 <= 6)
 
 /*
 var c = 1
